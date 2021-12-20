@@ -1,11 +1,11 @@
-export const goToMovieDetails = (history, path) => {
-    history.push(`/filme/${path}`)
+export const goToMovieDetails = (navigate, path) => {
+    navigate(`/filme/${path}`)
 }
 
-export const goToPopularMovies = (history) => {
-    history.push("/")
+export const goToPopularMovies = (navigate) => {
+    navigate("/")
 }
 
-export const goToFavoriteMovies = (history) => {
-    history.push("/favorito")
+export const goToFavoriteMovies = (navigate) => {
+    navigate("/favoritos")
 }
