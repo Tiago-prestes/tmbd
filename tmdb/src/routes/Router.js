@@ -14,7 +14,7 @@ const Router = () => {
           <Routes>
               <Route path={"/"} element={<PopularMovies/>}/>
               <Route path={"/filme/:path"} element={<MovieDetails/>}/>
-              <Route path={"/favorito"} element={<FavoritesPage/>}/>
+              <Route path={"/favoritos"} element={<FavoritesPage/>}/>
           </Routes>
         </BrowserRouter>
     )
