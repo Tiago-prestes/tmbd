@@ -18,9 +18,9 @@ const MovieDetails = () => {
     const favCollectionRef = collection(db, "favmovies")
 
     const handleFavorite = async () => {
-        await setNewFavorite(currentMovie)
-        await addDoc(favCollectionRef, { link: newFavorite })
         toast.success('Adicionado aos favoritos!')
+        setNewFavorite(currentMovie)
+        await addDoc(favCollectionRef, { link: newFavorite })
     } //Add novo item a lista de favoritos.
 
     return (

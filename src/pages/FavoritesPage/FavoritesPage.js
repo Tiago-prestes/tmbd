@@ -25,9 +25,6 @@ const FavoritesPage = () => {
         toast.error("Removido dos favoritos.")
     }//Deleta favorito pela id.
 
-console.log('Favoritos', favoriteList)
-
-
     return (
         <MainContainer>
             {favoriteList.map((fav) => {
