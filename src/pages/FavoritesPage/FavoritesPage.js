@@ -22,7 +22,7 @@ const FavoritesPage = () => {
     const deleteFav = async (id) => {
         const favDoc = doc(db, "favmovies", id)
         await deleteDoc(favDoc)
-        toast.error("Removido dos favoritos.")
+        // toast.error("Removido dos favoritos.")
     }//Deleta favorito pela id.
 
     return (
@@ -42,7 +42,7 @@ const FavoritesPage = () => {
                             </DescriptionContainer>
                             <DeleteButton>
                                 <button
-                                    onClick={() => deleteFav()}
+                                    onClick={() => deleteFav(fav.id)}
                                 ><DeleteIcon /></button>
                             </DeleteButton>
                         </InfoContainer>
